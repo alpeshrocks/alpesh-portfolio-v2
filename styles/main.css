@@ -1,0 +1,16 @@
+:root{--bg:#f7fbf8;--fg:#233;--accent:#6aa382;--card:#fff}
+body{margin:0;font-family:sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem;position:sticky;top:0;background:#fff8;backdrop-filter:blur(6px)}
+header.nav nav a{margin-left:1rem;color:var(--fg);text-decoration:none}
+.hero{text-align:center;padding:5rem 1rem;background:linear-gradient(135deg,#eaf5ef,#f6fbf8)}
+.hero h1{font-size:2.2rem}
+.accent{color:var(--accent)}
+.btn{background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:.5rem;margin:.4rem;display:inline-block;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+section{padding:3rem 1rem;max-width:1000px;margin:auto}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);padding:1rem;border-radius:.8rem;box-shadow:0 3px 6px #0001}
+.gallery{display:flex;gap:.5rem;flex-wrap:wrap}
+.gallery img{width:30%;border-radius:.5rem;object-fit:cover}
+footer{text-align:center;padding:2rem;font-size:.9rem;color:#555}
+@media(max-width:600px){.hero h1{font-size:1.5rem}.gallery img{width:100%}}
